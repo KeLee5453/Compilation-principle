@@ -1,0 +1,115 @@
+--- C:\Users\a1547\source\repos\编译原理\编译原理\源.cpp --------------------------------
+     1: #include<iostream>
+     2: using namespace std;
+     3: int main()
+     4: {
+00BA2590 55                   push        ebp  
+00BA2591 8B EC                mov         ebp,esp  
+00BA2593 81 EC F4 00 00 00    sub         esp,0F4h  
+00BA2599 53                   push        ebx  
+00BA259A 56                   push        esi  
+00BA259B 57                   push        edi  
+00BA259C 8D BD 0C FF FF FF    lea         edi,[ebp-0F4h]  
+00BA25A2 B9 3D 00 00 00       mov         ecx,3Dh  
+00BA25A7 B8 CC CC CC CC       mov         eax,0CCCCCCCCh  
+00BA25AC F3 AB                rep stos    dword ptr es:[edi]  
+00BA25AE A1 04 C0 BA 00       mov         eax,dword ptr [__security_cookie (0BAC004h)]  
+00BA25B3 33 C5                xor         eax,ebp  
+00BA25B5 89 45 FC             mov         dword ptr [ebp-4],eax  
+00BA25B8 B9 26 F0 BA 00       mov         ecx,offset _E238F83E_源@cpp (0BAF026h)  
+00BA25BD E8 BE EC FF FF       call        @__CheckForDebuggerJustMyCode@4 (0BA1280h)  
+     5: 	//我是注释
+     6: 	int i, n, f, te;
+     7: #define add(a,b) a+b
+     8: #define mul(a,b) a*b
+     9: #define concat(a,b) a##  b
+    10: #define MKSTR(x) #x
+    11: 	cin >> n;
+00BA25C2 8B F4                mov         esi,esp  
+00BA25C4 8D 45 E8             lea         eax,[n]  
+00BA25C7 50                   push        eax  
+00BA25C8 8B 0D 98 D0 BA 00    mov         ecx,dword ptr [_imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A (0BAD098h)]  
+00BA25CE FF 15 9C D0 BA 00    call        dword ptr [__imp_std::basic_istream<char,std::char_traits<char> >::operator>> (0BAD09Ch)]  
+00BA25D4 3B F4                cmp         esi,esp  
+00BA25D6 E8 AF EC FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+    12: 	i = 2;
+00BA25DB C7 45 F4 02 00 00 00 mov         dword ptr [i],2  
+    13: 	f = 1;
+00BA25E2 C7 45 DC 01 00 00 00 mov         dword ptr [f],1  
+    14: 	te = 88;
+00BA25E9 C7 45 D0 58 00 00 00 mov         dword ptr [te],58h  
+    15: 	while (i <= n)
+00BA25F0 8B 45 F4             mov         eax,dword ptr [i]  
+00BA25F3 3B 45 E8             cmp         eax,dword ptr [n]  
+00BA25F6 7F 15                jg          main+7Dh (0BA260Dh)  
+    16: 	{
+    17: 		f = mul(f, i);
+00BA25F8 8B 45 DC             mov         eax,dword ptr [f]  
+00BA25FB 0F AF 45 F4          imul        eax,dword ptr [i]  
+00BA25FF 89 45 DC             mov         dword ptr [f],eax  
+    18: 		i = add(i, 1);
+00BA2602 8B 45 F4             mov         eax,dword ptr [i]  
+00BA2605 83 C0 01             add         eax,1  
+00BA2608 89 45 F4             mov         dword ptr [i],eax  
+    19: 	}
+00BA260B EB E3                jmp         main+60h (0BA25F0h)  
+    20: 	cout << MKSTR(te) << endl;
+00BA260D 8B F4                mov         esi,esp  
+00BA260F 68 AD 12 BA 00       push        offset std::endl<char,std::char_traits<char> > (0BA12ADh)  
+00BA2614 68 30 9B BA 00       push        offset string "te" (0BA9B30h)  
+00BA2619 A1 E0 D0 BA 00       mov         eax,dword ptr [_imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A (0BAD0E0h)]  
+00BA261E 50                   push        eax  
+00BA261F E8 EE EB FF FF       call        std::operator<<<std::char_traits<char> > (0BA1212h)  
+00BA2624 83 C4 08             add         esp,8  
+00BA2627 8B C8                mov         ecx,eax  
+00BA2629 FF 15 AC D0 BA 00    call        dword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (0BAD0ACh)]  
+00BA262F 3B F4                cmp         esi,esp  
+00BA2631 E8 54 EC FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+    21: 	cout << concat(t, e) << endl;
+00BA2636 8B F4                mov         esi,esp  
+00BA2638 68 AD 12 BA 00       push        offset std::endl<char,std::char_traits<char> > (0BA12ADh)  
+00BA263D 8B FC                mov         edi,esp  
+00BA263F 8B 45 D0             mov         eax,dword ptr [te]  
+00BA2642 50                   push        eax  
+00BA2643 8B 0D E0 D0 BA 00    mov         ecx,dword ptr [_imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A (0BAD0E0h)]  
+00BA2649 FF 15 A8 D0 BA 00    call        dword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (0BAD0A8h)]  
+00BA264F 3B FC                cmp         edi,esp  
+00BA2651 E8 34 EC FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+00BA2656 8B C8                mov         ecx,eax  
+00BA2658 FF 15 AC D0 BA 00    call        dword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (0BAD0ACh)]  
+00BA265E 3B F4                cmp         esi,esp  
+00BA2660 E8 25 EC FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+    22: 	cout << f << endl;
+00BA2665 8B F4                mov         esi,esp  
+00BA2667 68 AD 12 BA 00       push        offset std::endl<char,std::char_traits<char> > (0BA12ADh)  
+00BA266C 8B FC                mov         edi,esp  
+00BA266E 8B 45 DC             mov         eax,dword ptr [f]  
+00BA2671 50                   push        eax  
+00BA2672 8B 0D E0 D0 BA 00    mov         ecx,dword ptr [_imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A (0BAD0E0h)]  
+00BA2678 FF 15 A8 D0 BA 00    call        dword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (0BAD0A8h)]  
+00BA267E 3B FC                cmp         edi,esp  
+00BA2680 E8 05 EC FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+00BA2685 8B C8                mov         ecx,eax  
+00BA2687 FF 15 AC D0 BA 00    call        dword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (0BAD0ACh)]  
+00BA268D 3B F4                cmp         esi,esp  
+00BA268F E8 F6 EB FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+    23: 	return 0;
+00BA2694 33 C0                xor         eax,eax  
+    24: }
+00BA2696 52                   push        edx  
+00BA2697 8B CD                mov         ecx,ebp  
+00BA2699 50                   push        eax  
+00BA269A 8D 15 C8 26 BA 00    lea         edx,ds:[0BA26C8h]  
+00BA26A0 E8 0D EC FF FF       call        @_RTC_CheckStackVars@8 (0BA12B2h)  
+00BA26A5 58                   pop         eax  
+00BA26A6 5A                   pop         edx  
+00BA26A7 5F                   pop         edi  
+00BA26A8 5E                   pop         esi  
+00BA26A9 5B                   pop         ebx  
+00BA26AA 8B 4D FC             mov         ecx,dword ptr [ebp-4]  
+00BA26AD 33 CD                xor         ecx,ebp  
+00BA26AF E8 95 EB FF FF       call        @__security_check_cookie@4 (0BA1249h)  
+00BA26B4 81 C4 F4 00 00 00    add         esp,0F4h  
+00BA26BA 3B EC                cmp         ebp,esp  
+00BA26BC E8 C9 EB FF FF       call        __RTC_CheckEsp (0BA128Ah)  
+00BA26C1 8B E5                mov         esp,ebp  

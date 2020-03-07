@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void main()
+{
+	//我是注释
+	int i, n, f,te;
+#define add(a,b) a+b
+#define mul(a,b) a*b
+#define concat(a,b) a##  b
+#define MKSTR(x) #x
+	cin >> n;
+	i = 2;
+	f = 1;
+	te = 88;
+	while (i <= n)
+	{
+		f = mul(f,i);
+		i = add(i,1);
+	}
+	cout << MKSTR(te)<<endl;
+	cout << concat(t, e) <<concat(f,i)<< endl;
+	cout << f << endl;
+}

@@ -1,0 +1,23 @@
+main()
+{
+//input,output and others
+    int a,b,c;
+    cin>>c;
+    {
+    	a=2;
+                b=3;
+                ;
+    }
+    while(a==2)
+    {
+         ;
+         if(a!=b)
+            for(;b>c;)
+            {
+	a=3 ;
+             }
+         
+    }   
+    cout<<c;
+    	
+}

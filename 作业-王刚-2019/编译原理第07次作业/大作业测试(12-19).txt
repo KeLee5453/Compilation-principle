@@ -1,0 +1,52 @@
+main()
+{
+	int a, b, c,d;
+	char D;
+	a = 5;
+	c = 7;
+	input(b);
+	input(D);
+	print(D);
+	D='P';
+	print(D);
+	while (a + 3 < b + 1 + 2 && (!(a == b)) || 1 != 1)
+	{ 
+		a = a + 1;
+	}
+	for (c = c+1; a >= b; b = b + 1)
+	{
+		print(b);
+	}
+	print(a);
+	print(b);
+	if (!(a == c))
+	{
+		b = 10;
+		print(c);
+	}
+	else
+	{
+		a = 100;
+		print(c);
+	}
+	c = c - 1;
+	print(a);
+	print(b);
+	print(c);
+	d=a+b*c;
+	print(d);
+	while (a == 0)
+	{
+		print(D);
+	}
+}
+
+
+main()
+{
+int a, b, c,d;
+while (a + 3 < b + 1 + 2 && ((a == b)) || 1 != 1)
+	{ 
+		a = a + 1;
+	}
+}

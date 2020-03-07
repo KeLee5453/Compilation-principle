@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (work_1.vcxproj, work_2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  myparser.cpp
+  正在生成代码
+  0 of 190 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  work_1.vcxproj -> C:\Users\a1547\Desktop\大三上\编译原理\作业-王刚-2019\编译原理第三次作业\work_3\work_3\Release\work_3.exe

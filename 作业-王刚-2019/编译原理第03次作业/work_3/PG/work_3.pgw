@@ -1,0 +1,20 @@
+[Application]
+WindowPlacement=0 1 -1 -1 -1 -1 200 131 1328 825
+[Editor1]
+FileName=.\mylexer.l
+ReadOnly=0
+WindowPlacement1=2 3 -1 -1 -8 -31 52 52 978 452
+WindowOrder1=1
+Position001=0 27
+Cursor001=0 1 0 1
+SyntaxColouring=1
+TargetSyntaxColouring=3
+[Project]
+WindowPlacement1=0 1 -1 -1 -8 -31 0 0 926 400
+WindowOrder1=2
+[ProjectFolders1]
+FolderCount=2
+FolderName1=Source Files
+FolderExpanded1=1
+FolderName2=Output Files
+FolderExpanded2=0

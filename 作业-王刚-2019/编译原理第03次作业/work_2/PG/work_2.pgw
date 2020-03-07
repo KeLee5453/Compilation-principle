@@ -1,0 +1,20 @@
+[Application]
+WindowPlacement=0 1 -1 -1 -1 -1 314 173 1442 866
+[Editor1]
+FileName=.\myparser.y
+ReadOnly=0
+WindowPlacement1=0 1 -1 -1 -1 -1 26 26 953 425
+WindowOrder1=1
+Position001=0 113
+Cursor001=12 113 12 113
+SyntaxColouring=2
+TargetSyntaxColouring=3
+[Project]
+WindowPlacement1=0 1 -1 -1 -1 -1 62 54 1150 635
+WindowOrder1=2
+[ProjectFolders1]
+FolderCount=2
+FolderName1=Source Files
+FolderExpanded1=1
+FolderName2=Output Files
+FolderExpanded2=0

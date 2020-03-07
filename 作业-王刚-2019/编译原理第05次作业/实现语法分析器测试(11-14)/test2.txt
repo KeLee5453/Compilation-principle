@@ -1,0 +1,16 @@
+main()
+{
+    
+    char D4;
+    int c;
+    D4='A';
+    /*
+    College of Computer Science
+    College of Cyber Science
+    //char,int,=,+,!=,>=,||,for
+    */
+    for(c=8;c!=3 || c>=5;)
+       
+         	c=c/2+1;
+		
+}

@@ -1,0 +1,20 @@
+﻿  mylexer.cpp
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyglobal.h(13,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyglobal.h(220,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyclex.h(24,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyclex.h(305,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yycpars.h(26,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+  myparser.cpp
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yycpars.h(453,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyglobal.h(13,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyglobal.h(220,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yycpars.h(26,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yycpars.h(453,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyclex.h(24,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Program Files (x86)\Parser Generator 2\Cpp\Include\yyclex.h(305,1): warning C4103: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+C:\Users\a1547\Desktop\大三上\编译原理\作业-王刚-2019\编译原理第三次作业\work_1\work_1\myparser.y(149,2): error C2065: “expr”: 未声明的标识符
+C:\Users\a1547\Desktop\大三上\编译原理\作业-王刚-2019\编译原理第三次作业\work_1\work_1\myparser.y(149,7): error C2146: 语法错误: 缺少“;”(在标识符“parser”的前面)
+C:\Users\a1547\Desktop\大三上\编译原理\作业-王刚-2019\编译原理第三次作业\work_1\work_1\myparser.y(149,7): error C2065: “parser”: 未声明的标识符
+C:\Users\a1547\Desktop\大三上\编译原理\作业-王刚-2019\编译原理第三次作业\work_1\work_1\myparser.y(150,6): error C2065: “parser”: 未声明的标识符
+  正在生成代码...
+C:\Users\a1547\Desktop\大三上\编译原理\作业-王刚-2019\编译原理第三次作业\work_1\work_1\myparser.y(151,7): error C2065: “parser”: 未声明的标识符
